@@ -47,16 +47,31 @@ class MyNavbar extends Component {
                 <NavbarToggler onClick={this.toogleNavbar} className="mr-2"/>
                 <Collapse isOpen={!this.state.collapse} navbar>
                     <Nav className="ml-auto" navbar>
+                        <BrowserRouter>
+                            <NavItem>
+                                <NavLink href="/">首頁</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/members">會員中心</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/certificates">證照資訊</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/vendors">協辦單位</NavLink>
+                            </NavItem>
                             <NavItem>
                                 <NavLink href="https://ithelp.ithome.com.tw/users/20119510/articles">關於我</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/AidenYang12345">GitHub</NavLink>
                             </NavItem>
+                           
+                        </BrowserRouter>
                     </Nav>
                 </Collapse>
             </Navbar >
-        )
+        );
     }
 }
 

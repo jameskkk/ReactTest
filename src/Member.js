@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Table } from 'reactstrap';
-//import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import MyNavbar from './MyNavbar';
 
 class Member extends Component {

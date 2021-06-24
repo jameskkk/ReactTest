@@ -6,6 +6,9 @@ import {
 	Switch
   } from 'react-router-dom';
 import Member from './Member';
+import Certificate from './Certificate';
+import Vendor from './Vendor';
+import Home from './Home';
 import React, { Component }  from 'react';
 
 // function App() {
