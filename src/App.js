@@ -6,8 +6,10 @@ import {
 	Switch
   } from 'react-router-dom';
 import Member from './Member';
+import AddMember from './AddMember';
 import Certificate from './Certificate';
 import Vendor from './Vendor';
+import SkillTree from './SkillTree';
 import Home from './Home';
 import React, { Component }  from 'react';
 
@@ -44,8 +46,10 @@ class App extends Component {
 			<Switch>
 			  <Route path="/" component={Home} exact={true}></Route>
 			  <Route path="/members" component={Member} exact={true}></Route>
+			  <Route path="/member/new" component={AddMember} exact={true}></Route>
 			  <Route path="/certificates" component={Certificate} exact={true}></Route>
 			  <Route path="/vendors" component={Vendor} exact={true}></Route>
+			  <Route path="/skillTree" component={SkillTree} exact={true}></Route>
 			</Switch>
 		  </BrowserRouter>
 		);

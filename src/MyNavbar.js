@@ -42,7 +42,7 @@ class MyNavbar extends Component {
                         height="30"
                         className="d-inline-block align-top"
                     />
-                    {' Aiden'}
+                    {' NKG Group'}
                 </NavbarBrand>
                 <NavbarToggler onClick={this.toogleNavbar} className="mr-2"/>
                 <Collapse isOpen={!this.state.collapse} navbar>
@@ -53,6 +53,9 @@ class MyNavbar extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/members">會員中心</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/skillTree">技能樹</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/certificates">證照資訊</NavLink>
@@ -71,7 +74,7 @@ class MyNavbar extends Component {
                     </Nav>
                 </Collapse>
             </Navbar >
-        );
+        )
     }
 }
 
